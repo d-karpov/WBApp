@@ -1,0 +1,36 @@
+//
+//  WalkthroughScreen_LabelView.swift
+//  WBApp
+//
+//  Created by Денис Карпов on 06.06.2024.
+//
+
+import SwiftUI
+
+struct WalkthroughScreen_LabelView: View {
+	var body: some View {
+		Label {
+			Text("Общайтесь с друзьями и близкими легко")
+				.font(.system(size: 24, weight: .bold))
+				.foregroundStyle(.fontNeutral)
+		} icon: {
+			Image(.chatting)
+		}
+		.labelStyle(VerticalLabelStyle())
+		.multilineTextAlignment(.center)
+	}
+}
+
+struct VerticalLabelStyle: LabelStyle {
+	func makeBody(configuration: Configuration) -> some View {
+		VStack(spacing: 42) {
+			configuration.icon
+			configuration.title
+		}
+		.frame(maxWidth: 280)
+	}
+}
+
+#Preview {
+	WalkthroughScreen_LabelView()
+}
