@@ -10,8 +10,7 @@ import SwiftUI
 struct CustomTabView: View {
 	
 	@StateObject var router: Router = .init()
-	
-	@State var frames: [CGRect] = []
+	@Namespace private var namespace
 	
 	var body: some View {
 		VStack(spacing: 0) {
@@ -20,40 +19,29 @@ struct CustomTabView: View {
 			HStack {
 				ForEach(Tabs.allCases, id: \.self) { item in
 					TabBarItemView(selectedTab: $router.selectedTab, tabItem: item)
+						.overlay(alignment: .bottom) {
+							if item == router.selectedTab {
+								selectionPointer
+							}
+						}
 				}
 			}
 			.padding(.horizontal, 16)
 			.padding(.top, 12)
 			.background(.neutralWhite)
 			.shadow(color: .black.opacity(0.04),radius: 20)
-			.coordinateSpace(.named("TabBar"))
-			.overlay() {
-				SelectionPointer(router.selectedTabIndex)
-			}
-		}
-		.onPreferenceChange(TabBarItemPreferenceKey.self) { frames in
-			self.frames = frames
+			.animation(.smooth(duration: 0.2), value: router.selectedTab)
 		}
 	}
 	
 	@ViewBuilder
-	private func SelectionPointer(_ at: Int) -> some View {
+	private var selectionPointer: some View {
 		Circle()
 			.fill(.neutralActive)
 			.frame(width: 4, height: 4)
-			.position(
-				x: getPointerCords(at).x,
-				y: getPointerCords(at).y 
-			)
-			.animation(.smooth, value: at)
+			.matchedGeometryEffect(id: "selection", in: namespace)
 	}
-	
-	private func getPointerCords(_ at: Int) -> CGPoint {
-		guard let frame = frames[safe: at] else {
-			return .zero
-		}
-		return CGPoint(x: frame.midX, y: frame.maxY)
-	}
+
 }
 
 #Preview {

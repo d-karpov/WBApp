@@ -12,28 +12,20 @@ struct TabBarItemView: View {
 	
 	let tabItem: Tabs
 	
-	var isSelected: Bool {
-		selectedTab == tabItem
-	}
-	
 	var body: some View {
 		Button {
 			withAnimation {
 				selectedTab = tabItem
 			}
 		} label: {
-			switch isSelected {
-			case true:
-				TabBarItemNamed(tabItem.name)
-			case false:
-				TabBarItemImage(tabItem.icon)
+			switch selectedTab == tabItem {
+			case true: TabBarItemNamed(tabItem.name)
+			case false: TabBarItemImage(tabItem.icon)
 			}
 		}
 		.foregroundStyle(.neutralActive)
 		.frame(maxWidth: .infinity, minHeight: 44)
-		.background(TabBarItemPreferenceViewSetter())
 	}
-	
 	
 	@ViewBuilder
 	private func TabBarItemImage(_ imageName: String) -> some View {
@@ -41,8 +33,6 @@ struct TabBarItemView: View {
 			.resizable()
 			.renderingMode(.template)
 			.frame(width: 32, height: 32)
-			.padding(.horizontal, 13)
-			.padding(.vertical, 6)
 	}
 	
 	@ViewBuilder
@@ -51,27 +41,6 @@ struct TabBarItemView: View {
 			.font(.bodyText2())
 			.foregroundStyle(.neutralActive)
 			.padding(.bottom)
-	}
-}
-
-struct TabBarItemPreferenceKey: PreferenceKey {
-	static var defaultValue: [CGRect] = []
-	
-	static func reduce(value: inout [CGRect], nextValue: () -> Value) {
-		value.append(contentsOf: nextValue())
-	}
-}
-
-struct TabBarItemPreferenceViewSetter: View {
-	var body: some View {
-		GeometryReader { geometry in
-			Rectangle()
-				.fill(Color.clear)
-				.preference(
-					key: TabBarItemPreferenceKey.self,
-					value: [geometry.frame(in: .named("TabBar"))]
-				)
-		}
 	}
 }
 

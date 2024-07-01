@@ -36,13 +36,6 @@ enum Tabs: Hashable, CaseIterable {
 		case .settings: SettingsScreen()
 		}
 	}
-	
-	func getIndex() -> Int {
-		guard let index = Tabs.allCases.firstIndex(of: self) else {
-			return 0
-		}
-		return index
-	}
 }
 
 final class Router: ObservableObject {
@@ -50,9 +43,5 @@ final class Router: ObservableObject {
 	
 	var tabContent: some View {
 		selectedTab.content
-	}
-	
-	var selectedTabIndex: Int {
-		selectedTab.getIndex()
 	}
 }

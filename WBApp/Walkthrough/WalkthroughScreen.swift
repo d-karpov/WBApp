@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct WalkthroughScreen: View {
-	
-	@State var verificationViewPresented = false
+	@State var tabViewPresented = false
 	
 	var body: some View {
 			VStack {
@@ -17,11 +16,13 @@ struct WalkthroughScreen: View {
 				WalkthroughScreen_LabelView()
 				Spacer()
 				WalkthroughScreen_ButtonStackView {
-					verificationViewPresented.toggle()
+					tabViewPresented.toggle()
 				}
 			}
 			.padding(.vertical, 20)
-			.fullScreenCover(isPresented: $verificationViewPresented, content: { CustomTabView() })
+			.fullScreenCover(isPresented: $tabViewPresented) {
+				CustomTabView()
+			}
 	}
 }
 

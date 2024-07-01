@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContactsScreen: View {
 	var body: some View {
-		Text("Contacts")
+		Text("Contacts here!")
 	}
 }
 
