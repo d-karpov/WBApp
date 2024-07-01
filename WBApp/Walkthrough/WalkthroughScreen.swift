@@ -21,9 +21,7 @@ struct WalkthroughScreen: View {
 				}
 			}
 			.padding(.vertical, 20)
-			.sheet(isPresented: $verificationViewPresented, content: {
-				VerificationScreen()
-			})
+			.fullScreenCover(isPresented: $verificationViewPresented, content: { CustomTabView() })
 	}
 }
 

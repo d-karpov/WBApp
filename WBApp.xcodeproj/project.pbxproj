@@ -7,17 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D317ECB62C28698A0090B3E0 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317ECB52C28698A0090B3E0 /* CustomTabView.swift */; };
+		D317ECB82C2869C70090B3E0 /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317ECB72C2869C70090B3E0 /* ContactsScreen.swift */; };
+		D317ECBC2C286A1E0090B3E0 /* ChatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317ECBB2C286A1E0090B3E0 /* ChatsScreen.swift */; };
+		D317ECBE2C286A3C0090B3E0 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317ECBD2C286A3C0090B3E0 /* SettingsScreen.swift */; };
 		D32AD4CC2C11FB580022A21C /* WalkthroughScreen_LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AD4CB2C11FB580022A21C /* WalkthroughScreen_LabelView.swift */; };
+		D385B3E92C2E047E0099DDC6 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385B3E82C2E047E0099DDC6 /* Font+Extensions.swift */; };
 		D3C513D12C11DF2300901FE2 /* VerificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C513D02C11DF2300901FE2 /* VerificationScreen.swift */; };
 		D3C513D52C11F4B900901FE2 /* WalkthroughScreen_ButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C513D42C11F4B900901FE2 /* WalkthroughScreen_ButtonStackView.swift */; };
 		D3CDCDC42C109F4F00D7EB76 /* WBAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CDCDC32C109F4F00D7EB76 /* WBAppApp.swift */; };
 		D3CDCDC62C109F4F00D7EB76 /* WalkthroughScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CDCDC52C109F4F00D7EB76 /* WalkthroughScreen.swift */; };
 		D3CDCDC82C109F5000D7EB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CDCDC72C109F5000D7EB76 /* Assets.xcassets */; };
 		D3CDCDCB2C109F5000D7EB76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */; };
+		D3F5CBC52C33103D008394A1 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5CBC42C33103D008394A1 /* Array+Extensions.swift */; };
+		D3F5CBC82C334582008394A1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5CBC72C334582008394A1 /* Router.swift */; };
+		D3F5CBCC2C33472E008394A1 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5CBCB2C33472E008394A1 /* TabBarItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D317ECB52C28698A0090B3E0 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		D317ECB72C2869C70090B3E0 /* ContactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
+		D317ECBB2C286A1E0090B3E0 /* ChatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsScreen.swift; sourceTree = "<group>"; };
+		D317ECBD2C286A3C0090B3E0 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		D32AD4CB2C11FB580022A21C /* WalkthroughScreen_LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughScreen_LabelView.swift; sourceTree = "<group>"; };
+		D385B3E82C2E047E0099DDC6 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		D3C513D02C11DF2300901FE2 /* VerificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationScreen.swift; sourceTree = "<group>"; };
 		D3C513D42C11F4B900901FE2 /* WalkthroughScreen_ButtonStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughScreen_ButtonStackView.swift; sourceTree = "<group>"; };
 		D3CDCDC02C109F4F00D7EB76 /* WBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +38,9 @@
 		D3CDCDC52C109F4F00D7EB76 /* WalkthroughScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughScreen.swift; sourceTree = "<group>"; };
 		D3CDCDC72C109F5000D7EB76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3F5CBC42C33103D008394A1 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		D3F5CBC72C334582008394A1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D3F5CBCB2C33472E008394A1 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D317ECB42C2863B80090B3E0 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				D317ECB72C2869C70090B3E0 /* ContactsScreen.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		D317ECB92C2869D90090B3E0 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				D317ECBB2C286A1E0090B3E0 /* ChatsScreen.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		D317ECBA2C2869FF0090B3E0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D317ECBD2C286A3C0090B3E0 /* SettingsScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D385B3E72C2E045E0099DDC6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D385B3E82C2E047E0099DDC6 /* Font+Extensions.swift */,
+				D3F5CBC42C33103D008394A1 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D385B3EA2C2E0D4D0099DDC6 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				D317ECB52C28698A0090B3E0 /* CustomTabView.swift */,
+				D3F5CBCB2C33472E008394A1 /* TabBarItemView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		D3C513D62C11F72300901FE2 /* Walkthrough */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +134,14 @@
 			isa = PBXGroup;
 			children = (
 				D3CDCDC32C109F4F00D7EB76 /* WBAppApp.swift */,
+				D3F5CBC62C334568008394A1 /* Servicies */,
 				D3C513D62C11F72300901FE2 /* Walkthrough */,
+				D385B3EA2C2E0D4D0099DDC6 /* TabView */,
+				D317ECB42C2863B80090B3E0 /* Contacts */,
+				D317ECB92C2869D90090B3E0 /* Chats */,
+				D317ECBA2C2869FF0090B3E0 /* Settings */,
 				D3C513D72C11F80E00901FE2 /* Verification */,
+				D385B3E72C2E045E0099DDC6 /* Extensions */,
 				D3CDCDC92C109F5000D7EB76 /* Preview Content */,
 				D3CDCDC72C109F5000D7EB76 /* Assets.xcassets */,
 			);
@@ -90,6 +154,14 @@
 				D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3F5CBC62C334568008394A1 /* Servicies */ = {
+			isa = PBXGroup;
+			children = (
+				D3F5CBC72C334582008394A1 /* Router.swift */,
+			);
+			path = Servicies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,11 +234,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F5CBCC2C33472E008394A1 /* TabBarItemView.swift in Sources */,
+				D317ECB82C2869C70090B3E0 /* ContactsScreen.swift in Sources */,
+				D317ECBE2C286A3C0090B3E0 /* SettingsScreen.swift in Sources */,
 				D3C513D12C11DF2300901FE2 /* VerificationScreen.swift in Sources */,
+				D3F5CBC52C33103D008394A1 /* Array+Extensions.swift in Sources */,
+				D3F5CBC82C334582008394A1 /* Router.swift in Sources */,
 				D3CDCDC62C109F4F00D7EB76 /* WalkthroughScreen.swift in Sources */,
 				D32AD4CC2C11FB580022A21C /* WalkthroughScreen_LabelView.swift in Sources */,
 				D3CDCDC42C109F4F00D7EB76 /* WBAppApp.swift in Sources */,
 				D3C513D52C11F4B900901FE2 /* WalkthroughScreen_ButtonStackView.swift in Sources */,
+				D385B3E92C2E047E0099DDC6 /* Font+Extensions.swift in Sources */,
+				D317ECB62C28698A0090B3E0 /* CustomTabView.swift in Sources */,
+				D317ECBC2C286A1E0090B3E0 /* ChatsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

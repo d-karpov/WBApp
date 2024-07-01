@@ -16,7 +16,7 @@ struct VerificationScreen: View {
 			dismiss()
 		}
 		.font(.largeTitle)
-		.foregroundStyle(.fontNeutral)
+		.foregroundStyle(.neutralActive)
 	}
 }
 

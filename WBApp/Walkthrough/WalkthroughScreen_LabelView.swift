@@ -11,10 +11,10 @@ struct WalkthroughScreen_LabelView: View {
 	var body: some View {
 		Label {
 			Text("Общайтесь с друзьями и близкими легко")
-				.font(.system(size: 24, weight: .bold))
-				.foregroundStyle(.fontNeutral)
+				.font(.heading2())
+				.foregroundStyle(.neutralActive)
 		} icon: {
-			Image(.chatting)
+			Image(.walkthrough)
 		}
 		.labelStyle(VerticalLabelStyle())
 		.multilineTextAlignment(.center)
