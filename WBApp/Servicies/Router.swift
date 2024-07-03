@@ -31,7 +31,7 @@ enum Tabs: Hashable, CaseIterable {
 	@ViewBuilder
 	var content: some View {
 		switch self {
-		case .contacts: ContactsScreen()
+		case .contacts: ContactsScreen(contacts: Contact.mockContacts)
 		case .chats: ChatsScreen()
 		case .settings: SettingsScreen()
 		}
