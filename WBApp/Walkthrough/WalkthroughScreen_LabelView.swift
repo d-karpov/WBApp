@@ -16,12 +16,12 @@ struct WalkthroughScreen_LabelView: View {
 		} icon: {
 			Image(.walkthrough)
 		}
-		.labelStyle(VerticalLabelStyle())
+		.labelStyle(WalkthroughLabelStyle())
 		.multilineTextAlignment(.center)
 	}
 }
 
-struct VerticalLabelStyle: LabelStyle {
+struct WalkthroughLabelStyle: LabelStyle {
 	func makeBody(configuration: Configuration) -> some View {
 		VStack(spacing: 42) {
 			configuration.icon

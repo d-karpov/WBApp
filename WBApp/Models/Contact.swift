@@ -5,7 +5,14 @@
 //  Created by Денис Карпов on 03.07.2024.
 //
 
-import Foundation
+import SwiftUI
+
+enum SocialNetworks: String, CaseIterable {
+	case twitter
+	case instagram
+	case linkedin
+	case facebook
+}
 
 
 struct Contact: Hashable, Identifiable {
@@ -14,6 +21,7 @@ struct Contact: Hashable, Identifiable {
 	var surname: String?
 	var phone: String?
 	var contactImage: String?
+	var socialNetworks: [SocialNetworks]?
 	var lastSeen: Date
 	
 	var fullName: String {

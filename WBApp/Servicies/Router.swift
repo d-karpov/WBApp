@@ -40,6 +40,12 @@ enum Tabs: Hashable, CaseIterable {
 
 enum Routes: Hashable {
 	case contactDetails(Contact)
+	
+	var name: String {
+		switch self {
+		case .contactDetails(_): "Профиль"
+		}
+	}
 }
 
 final class Router: ObservableObject {
@@ -56,7 +62,19 @@ final class Router: ObservableObject {
 		selectedTab.content
 	}
 	
-	func showDetailContact(_ contact: Contact) {
+	func navigateTo(_ route: Routes) {
+		switch route {
+		case .contactDetails(let contact):
+			showDetailContact(contact)
+		}
+	}
+	
+	func currentRoute() -> Routes? {
+		guard let route = path.last else { return nil }
+		return route
+	}
+	
+	private func showDetailContact(_ contact: Contact) {
 		path.append(.contactDetails(contact))
 	}
 	

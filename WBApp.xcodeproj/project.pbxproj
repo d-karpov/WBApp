@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D301280E2C369AE200E3483A /* CustomSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D301280D2C369AE200E3483A /* CustomSearchBarView.swift */; };
+		D30128142C36C1ED00E3483A /* CustomNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30128132C36C1ED00E3483A /* CustomNavigationBarView.swift */; };
 		D317ECB62C28698A0090B3E0 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317ECB52C28698A0090B3E0 /* CustomTabBarView.swift */; };
 		D317ECB82C2869C70090B3E0 /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317ECB72C2869C70090B3E0 /* ContactsScreen.swift */; };
 		D317ECBC2C286A1E0090B3E0 /* ChatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317ECBB2C286A1E0090B3E0 /* ChatsScreen.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		D301280D2C369AE200E3483A /* CustomSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBarView.swift; sourceTree = "<group>"; };
+		D30128132C36C1ED00E3483A /* CustomNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarView.swift; sourceTree = "<group>"; };
 		D317ECB52C28698A0090B3E0 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		D317ECB72C2869C70090B3E0 /* ContactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
 		D317ECBB2C286A1E0090B3E0 /* ChatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsScreen.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 				D301280D2C369AE200E3483A /* CustomSearchBarView.swift */,
 			);
 			path = CustomSearchBar;
+			sourceTree = "<group>";
+		};
+		D30128122C36C1D200E3483A /* CustomNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				D30128132C36C1ED00E3483A /* CustomNavigationBarView.swift */,
+			);
+			path = CustomNavigationBar;
 			sourceTree = "<group>";
 		};
 		D317ECB42C2863B80090B3E0 /* Contacts */ = {
@@ -162,6 +172,7 @@
 		D3CDCDC22C109F4F00D7EB76 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
+				D30128122C36C1D200E3483A /* CustomNavigationBar */,
 				D301280C2C369AB900E3483A /* CustomSearchBar */,
 				D3CDCDC32C109F4F00D7EB76 /* WBAppApp.swift */,
 				D3FB4E842C35609300163E4C /* Models */,
@@ -285,6 +296,7 @@
 				D301280E2C369AE200E3483A /* CustomSearchBarView.swift in Sources */,
 				D3CDCDC62C109F4F00D7EB76 /* WalkthroughScreen.swift in Sources */,
 				D3FB4E8E2C35D61100163E4C /* MockContacts.swift in Sources */,
+				D30128142C36C1ED00E3483A /* CustomNavigationBarView.swift in Sources */,
 				D32AD4CC2C11FB580022A21C /* WalkthroughScreen_LabelView.swift in Sources */,
 				D3CDCDC42C109F4F00D7EB76 /* WBAppApp.swift in Sources */,
 				D3C513D52C11F4B900901FE2 /* WalkthroughScreen_ButtonStackView.swift in Sources */,

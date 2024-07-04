@@ -14,6 +14,7 @@ extension Contact {
 				name: "Анастасия",
 				surname: "Иванова",
 				contactImage: "userImageMock3",
+				socialNetworks: SocialNetworks.allCases,
 				lastSeen: Calendar.autoupdatingCurrent.date(byAdding: .day, value: -1, to: .now)!,
 				isOnline: false,
 				isHasStory: false
@@ -21,6 +22,7 @@ extension Contact {
 			.init(
 				name: "Петя",
 				contactImage: "userImageMock4",
+				socialNetworks: SocialNetworks.allCases,
 				lastSeen: .now,
 				isOnline: true,
 				isHasStory: false
@@ -28,6 +30,7 @@ extension Contact {
 			.init(
 				name: "Маман",
 				contactImage: "userImageMock2",
+				socialNetworks: [.facebook, .instagram],
 				lastSeen: Calendar.autoupdatingCurrent.date(byAdding: .hour, value: -3, to: .now)!,
 				isOnline: false,
 				isHasStory: true
@@ -36,6 +39,7 @@ extension Contact {
 				name: "Арбуз",
 				surname: "Дыня",
 				contactImage: "userImageMock1",
+				socialNetworks: SocialNetworks.allCases,
 				lastSeen: .now,
 				isOnline: true,
 				isHasStory: false
@@ -44,6 +48,7 @@ extension Contact {
 				name: "Иван",
 				surname: "Иванов",
 				contactImage: nil,
+				socialNetworks: [.twitter, .linkedin],
 				lastSeen: .now,
 				isOnline: true,
 				isHasStory: false

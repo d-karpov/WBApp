@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContactsScreen: View {
 	
-	@State var contacts: [Contact]
 	@ObservedObject var router: Router = .shared
+	@State var contacts: [Contact]
 	@State var searchText: String = ""
 	@FocusState private var searchIsFocused: Bool
 	
@@ -20,11 +20,10 @@ struct ContactsScreen: View {
 				LazyVStack(spacing: 16) {
 					CustomSearchBarView(searchText: $searchText)
 						.focused($searchIsFocused)
-
 					ForEach(filterContacts(byName: searchText)) { contact in
 						ContactsScreen_RowView(contact: contact)
 							.onTapGesture {
-								router.showDetailContact(contact)
+								router.navigateTo(.contactDetails(contact))
 							}
 						Divider()
 					}

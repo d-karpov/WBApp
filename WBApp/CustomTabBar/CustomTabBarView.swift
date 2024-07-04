@@ -14,6 +14,9 @@ struct CustomTabBarView: View {
 	
 	var body: some View {
 		VStack(spacing: 0) {
+			CustomNavigationBarView()
+				.padding(.horizontal, 24)
+				.padding(.bottom, 16)
 			router.tabContent
 				.frame(maxWidth: .infinity, maxHeight: .infinity)
 			HStack {
