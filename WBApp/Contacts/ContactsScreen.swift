@@ -16,10 +16,12 @@ struct ContactsScreen: View {
 	
 	var body: some View {
 		NavigationStack(path: $router.path) {
+			CustomSearchBarView(searchText: $searchText)
+				.focused($searchIsFocused)
+				.padding(.bottom, 16)
+				.padding(.horizontal, 24)
 			ScrollView {
 				LazyVStack(spacing: 16) {
-					CustomSearchBarView(searchText: $searchText)
-						.focused($searchIsFocused)
 					ForEach(filterContacts(byName: searchText)) { contact in
 						ContactsScreen_RowView(contact: contact)
 							.onTapGesture {
