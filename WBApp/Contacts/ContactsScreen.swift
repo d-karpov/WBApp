@@ -25,14 +25,10 @@ struct ContactsScreen: View {
 							.onTapGesture {
 								router.navigateTo(.contactDetails(contact))
 							}
-						Divider()
 					}
-					.navigationDestination(for: Routes.self) { route in
-						switch route {
-						case .contactDetails(let contact):
-							ContactsScreen_DetailView(contact: contact)
-						}
-					}
+				}
+				.navigationDestination(for: Routes.self) { route in
+					route.content
 				}
 				.padding(.horizontal, 24)
 			}

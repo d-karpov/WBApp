@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: - Tabs settings
 enum Tabs: Hashable, CaseIterable {
 	case contacts
 	case chats
@@ -38,6 +39,7 @@ enum Tabs: Hashable, CaseIterable {
 	}
 }
 
+// MARK: - Navigation routes settings
 enum Routes: Hashable {
 	case contactDetails(Contact)
 	
@@ -46,8 +48,16 @@ enum Routes: Hashable {
 		case .contactDetails(_): "Профиль"
 		}
 	}
+	
+	@ViewBuilder
+	var content: some View {
+		switch self {
+		case .contactDetails(let contact): ContactsScreen_DetailView(contact: contact)
+		}
+	}
 }
 
+// MARK: - Router
 final class Router: ObservableObject {
 	static let shared: Router = .init(selectedTab: .contacts)
 	
@@ -65,7 +75,7 @@ final class Router: ObservableObject {
 	func navigateTo(_ route: Routes) {
 		switch route {
 		case .contactDetails(let contact):
-			showDetailContact(contact)
+			path.append(.contactDetails(contact))
 		}
 	}
 	
@@ -74,11 +84,11 @@ final class Router: ObservableObject {
 		return route
 	}
 	
-	private func showDetailContact(_ contact: Contact) {
-		path.append(.contactDetails(contact))
+	func previousPath() {
+		path.removeLast()
 	}
 	
-	func backToRoot() {
+	private func backToRoot() {
 		path.removeAll()
 	}
 	

@@ -68,7 +68,7 @@ struct BackNavigationButton: View {
 	@ObservedObject var router: Router = .shared
 	
 	var body: some View {
-		Button(action: router.backToRoot, label: {
+		Button(action: router.previousPath, label: {
 			Image(.backButton)
 				.frame(maxWidth: 24, maxHeight: 24)
 		})

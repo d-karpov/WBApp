@@ -11,17 +11,20 @@ struct ContactsScreen_RowView: View {
 	@State var contact: Contact
 	
 	var body: some View {
-		HStack(alignment: .top, spacing: 12) {
-			ContactsScreen_AvatarView(
-				contactImage: contact.contactImage,
-				initials: contact.initials,
-				isOnline: contact.isOnline,
-				isHasStory: contact.isHasStory
-			)
-			titleView
-			Spacer()
+		VStack(spacing: 12) {
+			HStack(alignment: .top, spacing: 12) {
+				ContactsScreen_AvatarView(
+					contactImage: contact.contactImage,
+					initials: contact.initials,
+					isOnline: contact.isOnline,
+					isHasStory: contact.isHasStory
+				)
+				titleView
+				Spacer()
+			}
+			.background(.neutralWhite)
+			Divider()
 		}
-		.background(.neutralWhite)
 		.frame(minHeight: 68, alignment: .leading)
 	}
 	
