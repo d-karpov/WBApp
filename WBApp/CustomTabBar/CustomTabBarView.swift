@@ -1,5 +1,5 @@
 //
-//  MainTabView.swift
+//  CustomTabBarView.swift
 //  WBApp
 //
 //  Created by Денис Карпов on 23.06.2024.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct CustomTabView: View {
+struct CustomTabBarView: View {
 	
-	@StateObject var router: Router = .init()
+	@StateObject var router: Router = .shared
 	@Namespace private var namespace
 	
 	var body: some View {
@@ -18,7 +18,7 @@ struct CustomTabView: View {
 				.frame(maxWidth: .infinity, maxHeight: .infinity)
 			HStack {
 				ForEach(Tabs.allCases, id: \.self) { item in
-					TabBarItemView(selectedTab: $router.selectedTab, tabItem: item)
+					CustomTabBarItemView(selectedTab: $router.selectedTab, tabItem: item)
 						.overlay(alignment: .bottom) {
 							if item == router.selectedTab {
 								selectionPointer
@@ -30,7 +30,7 @@ struct CustomTabView: View {
 			.padding(.top, 12)
 			.background(.neutralWhite)
 			.shadow(color: .black.opacity(0.04),radius: 20)
-			.animation(.smooth(duration: 0.2), value: router.selectedTab)
+			.animation(.smooth(duration: 0.3), value: router.selectedTab)
 		}
 	}
 	
@@ -45,5 +45,5 @@ struct CustomTabView: View {
 }
 
 #Preview {
-	CustomTabView()
+	CustomTabBarView()
 }

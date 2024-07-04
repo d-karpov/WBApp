@@ -19,9 +19,10 @@ struct ContactsScreen_RowView: View {
 				isHasStory: contact.isHasStory
 			)
 			titleView
+			Spacer()
 		}
-		.frame(maxWidth:.infinity, minHeight: 68, alignment: .leading)
-		
+		.background(.neutralWhite)
+		.frame(minHeight: 68, alignment: .leading)
 	}
 	
 	@ViewBuilder

@@ -1,5 +1,5 @@
 //
-//  TabBarItemView.swift
+//  CustomTabBarItemView.swift
 //  WBApp
 //
 //  Created by Денис Карпов on 01.07.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TabBarItemView: View {
+struct CustomTabBarItemView: View {
 	@Binding var selectedTab: Tabs
 	
 	let tabItem: Tabs
@@ -46,5 +46,5 @@ struct TabBarItemView: View {
 
 #Preview {
 	@State var selectedTab: Tabs = .contacts
-	return TabBarItemView(selectedTab: $selectedTab, tabItem: .contacts)
+	return CustomTabBarItemView(selectedTab: $selectedTab, tabItem: .contacts)
 }

@@ -10,20 +10,46 @@ import SwiftUI
 struct ContactsScreen: View {
 	
 	@State var contacts: [Contact]
+	@ObservedObject var router: Router = .shared
+	@State var searchText: String = ""
+	@FocusState private var searchIsFocused: Bool
 	
 	var body: some View {
-		VStack(spacing: 16) {
-			List(contacts) { contact in
-				ContactsScreen_RowView(contact: contact)
-					.alignmentGuide(.listRowSeparatorTrailing) { dimension in
-						dimension.width
+		NavigationStack(path: $router.path) {
+			ScrollView {
+				LazyVStack(spacing: 16) {
+					CustomSearchBarView(searchText: $searchText)
+						.focused($searchIsFocused)
+
+					ForEach(filterContacts(byName: searchText)) { contact in
+						ContactsScreen_RowView(contact: contact)
+							.onTapGesture {
+								router.showDetailContact(contact)
+							}
+						Divider()
 					}
-					.alignmentGuide(.listRowSeparatorLeading) { dimension in
-						0
+					.navigationDestination(for: Routes.self) { route in
+						switch route {
+						case .contactDetails(let contact):
+							ContactsScreen_DetailView(contact: contact)
+						}
 					}
+				}
+				.padding(.horizontal, 24)
 			}
-			.listStyle(.plain)
+			.onTapGesture {
+				searchIsFocused = false
+			}
 		}
+	}
+	
+	private func filterContacts(byName: String) -> [Contact] {
+		if byName != "" {
+			return contacts.filter { contact in
+				contact.fullName.localizedCaseInsensitiveContains(byName)
+			}
+		}
+		return contacts
 	}
 }
 

@@ -21,7 +21,7 @@ struct WalkthroughScreen: View {
 			}
 			.padding(.vertical, 20)
 			.fullScreenCover(isPresented: $tabViewPresented) {
-				CustomTabView()
+				CustomTabBarView()
 			}
 	}
 }

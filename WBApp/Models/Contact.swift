@@ -12,20 +12,25 @@ struct Contact: Hashable, Identifiable {
 	var id = UUID()
 	var name: String
 	var surname: String?
+	var phone: String?
+	var contactImage: String?
+	var lastSeen: Date
+	
 	var fullName: String {
 		name + " " + (surname ?? "")
 	}
+	
 	var initials: String {
 		getInitials()
 	}
-	var contactImage: String?
-	var lastSeen: Date
+	
 	var lastSeenDescription: String {
 		switch isOnline {
 		case true: return "Online"
 		case false: return makeLastSeenDescription()
 		}
 	}
+	
 	var isOnline: Bool
 	var isHasStory: Bool
 }

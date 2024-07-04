@@ -38,10 +38,33 @@ enum Tabs: Hashable, CaseIterable {
 	}
 }
 
+enum Routes: Hashable {
+	case contactDetails(Contact)
+}
+
 final class Router: ObservableObject {
-	@Published var selectedTab: Tabs = .contacts
+	static let shared: Router = .init(selectedTab: .contacts)
+	
+	@Published var selectedTab: Tabs {
+		didSet {
+			backToRoot()
+		}
+	}
+	@Published var path: [Routes] = []
 	
 	var tabContent: some View {
 		selectedTab.content
+	}
+	
+	func showDetailContact(_ contact: Contact) {
+		path.append(.contactDetails(contact))
+	}
+	
+	func backToRoot() {
+		path.removeAll()
+	}
+	
+	private init(selectedTab: Tabs) {
+		self.selectedTab = selectedTab
 	}
 }
