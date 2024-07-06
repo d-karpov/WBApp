@@ -11,7 +11,7 @@ import SwiftUI
 struct WBAppApp: App {
 	var body: some Scene {
 		WindowGroup {
-			WalkthroughScreen()
+			CustomTabBarView()
 		}
 	}
 }

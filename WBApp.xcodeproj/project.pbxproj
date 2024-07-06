@@ -21,6 +21,7 @@
 		D3CDCDC62C109F4F00D7EB76 /* WalkthroughScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CDCDC52C109F4F00D7EB76 /* WalkthroughScreen.swift */; };
 		D3CDCDC82C109F5000D7EB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CDCDC72C109F5000D7EB76 /* Assets.xcassets */; };
 		D3CDCDCB2C109F5000D7EB76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */; };
+		D3EA77512C39A9270066E8B9 /* OpenTabIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA77502C39A9270066E8B9 /* OpenTabIntent.swift */; };
 		D3F5CBC82C334582008394A1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5CBC72C334582008394A1 /* Router.swift */; };
 		D3F5CBCC2C33472E008394A1 /* CustomTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5CBCB2C33472E008394A1 /* CustomTabBarItemView.swift */; };
 		D3FB4E832C35605500163E4C /* ContactsScreen_RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FB4E822C35605500163E4C /* ContactsScreen_RowView.swift */; };
@@ -48,6 +49,7 @@
 		D3CDCDC52C109F4F00D7EB76 /* WalkthroughScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughScreen.swift; sourceTree = "<group>"; };
 		D3CDCDC72C109F5000D7EB76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3EA77502C39A9270066E8B9 /* OpenTabIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTabIntent.swift; sourceTree = "<group>"; };
 		D3F5CBC72C334582008394A1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D3F5CBCB2C33472E008394A1 /* CustomTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemView.swift; sourceTree = "<group>"; };
 		D3FB4E822C35605500163E4C /* ContactsScreen_RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen_RowView.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				D3CDCDC32C109F4F00D7EB76 /* WBAppApp.swift */,
+				D3EA774F2C39A8E50066E8B9 /* Intents */,
 				D3FB4E842C35609300163E4C /* Models */,
 				D3F5CBC62C334568008394A1 /* Servicies */,
 				D30128122C36C1D200E3483A /* CustomNavigationBar */,
@@ -193,6 +196,14 @@
 				D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3EA774F2C39A8E50066E8B9 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				D3EA77502C39A9270066E8B9 /* OpenTabIntent.swift */,
+			);
+			path = Intents;
 			sourceTree = "<group>";
 		};
 		D3F5CBC62C334568008394A1 /* Servicies */ = {
@@ -298,6 +309,7 @@
 				D3C513D52C11F4B900901FE2 /* WalkthroughScreen_ButtonStackView.swift in Sources */,
 				D3FB4E8C2C35CE0000163E4C /* ContactsScreen_AvatarView.swift in Sources */,
 				D385B3E92C2E047E0099DDC6 /* Font+Extensions.swift in Sources */,
+				D3EA77512C39A9270066E8B9 /* OpenTabIntent.swift in Sources */,
 				D3FB4E8A2C35BBEB00163E4C /* Color+Extensions.swift in Sources */,
 				D317ECB62C28698A0090B3E0 /* CustomTabBarView.swift in Sources */,
 				D317ECBC2C286A1E0090B3E0 /* ChatsScreen.swift in Sources */,
@@ -449,9 +461,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = denis.karpov.WBApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,9 +492,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = denis.karpov.WBApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
