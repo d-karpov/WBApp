@@ -35,6 +35,9 @@ struct CustomTabBarView: View {
 			.shadow(color: .black.opacity(0.04),radius: 20)
 			.animation(.smooth(duration: 0.3), value: router.selectedTab)
 		}
+		.onOpenURL { url in
+			router.handleDeeplink(url: url)
+		}
 	}
 	
 	@ViewBuilder
