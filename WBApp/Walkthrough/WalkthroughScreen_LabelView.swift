@@ -11,17 +11,17 @@ struct WalkthroughScreen_LabelView: View {
 	var body: some View {
 		Label {
 			Text("Общайтесь с друзьями и близкими легко")
-				.font(.system(size: 24, weight: .bold))
-				.foregroundStyle(.fontNeutral)
+				.font(.heading2())
+				.foregroundStyle(.neutralActive)
 		} icon: {
-			Image(.chatting)
+			Image(.walkthrough)
 		}
-		.labelStyle(VerticalLabelStyle())
+		.labelStyle(WalkthroughLabelStyle())
 		.multilineTextAlignment(.center)
 	}
 }
 
-struct VerticalLabelStyle: LabelStyle {
+struct WalkthroughLabelStyle: LabelStyle {
 	func makeBody(configuration: Configuration) -> some View {
 		VStack(spacing: 42) {
 			configuration.icon

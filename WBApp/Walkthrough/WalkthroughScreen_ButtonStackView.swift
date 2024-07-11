@@ -13,8 +13,8 @@ struct WalkthroughScreen_ButtonStackView: View {
 	var body: some View {
 		VStack(spacing: 18) {
 			Button("Пользовательское соглашение", action: { })
-				.font(.system(size: 14, weight: .medium))
-				.foregroundStyle(.fontNeutral)
+				.font(Font.metadata1())
+				.foregroundStyle(.neutralActive)
 			Button(action: action) {
 				Text("Начать общаться")
 					.font(.system(size: 16, weight: .medium))
@@ -24,7 +24,7 @@ struct WalkthroughScreen_ButtonStackView: View {
 			.buttonBorderShape(.capsule)
 			.buttonStyle(.borderedProminent)
 			.controlSize(.extraLarge)
-			.tint(.defaultButton)
+			.tint(.brandDefault)
 		}
 	}
 }
