@@ -8,7 +8,7 @@
 import SwiftUI
 
 // MARK: - Tabs settings
-enum Tabs: Hashable, CaseIterable {
+enum Tabs: String, Hashable, CaseIterable {
 	case contacts
 	case chats
 	case settings
@@ -86,6 +86,18 @@ final class Router: ObservableObject {
 	
 	func previousPath() {
 		path.removeLast()
+	}
+	
+	func handleDeeplink(url: URL) {
+		if url.scheme == "wbapp" {
+			switch url.host {
+			case Tabs.contacts.rawValue: selectedTab = .contacts
+			case Tabs.chats.rawValue: selectedTab = .chats
+			case Tabs.settings.rawValue: selectedTab = .settings
+			default:
+				break
+			}
+		}
 	}
 	
 	private func backToRoot() {
