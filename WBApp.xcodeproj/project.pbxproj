@@ -95,6 +95,7 @@
 		D3CDCDC52C109F4F00D7EB76 /* WalkthroughScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughScreen.swift; sourceTree = "<group>"; };
 		D3CDCDC72C109F5000D7EB76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3CE9D202C3FC15800FA98A0 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D3EA77502C39A9270066E8B9 /* OpenTabIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTabIntent.swift; sourceTree = "<group>"; };
 		D3F5CBC72C334582008394A1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D3F5CBCB2C33472E008394A1 /* CustomTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemView.swift; sourceTree = "<group>"; };
@@ -239,6 +240,7 @@
 		D3CDCDB72C109F4F00D7EB76 = {
 			isa = PBXGroup;
 			children = (
+				D3CE9D1F2C3FC10F00FA98A0 /* Factory */,
 				D323B8B32C3DED2C008973DE /* Bank */,
 				D3CDCDC22C109F4F00D7EB76 /* WBApp */,
 				D327BD342C3AD37400455533 /* WBAppWidget */,
@@ -285,6 +287,14 @@
 				D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3CE9D1F2C3FC10F00FA98A0 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				D3CE9D202C3FC15800FA98A0 /* Factory.playground */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		D3EA774F2C39A8E50066E8B9 /* Intents */ = {
