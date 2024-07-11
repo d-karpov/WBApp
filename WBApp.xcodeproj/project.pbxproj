@@ -32,6 +32,7 @@
 		D3CDCDC62C109F4F00D7EB76 /* WalkthroughScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CDCDC52C109F4F00D7EB76 /* WalkthroughScreen.swift */; };
 		D3CDCDC82C109F5000D7EB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CDCDC72C109F5000D7EB76 /* Assets.xcassets */; };
 		D3CDCDCB2C109F5000D7EB76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */; };
+		D3CE9D232C401B7300FA98A0 /* DatePickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE9D222C401B7300FA98A0 /* DatePickerScreen.swift */; };
 		D3EA77512C39A9270066E8B9 /* OpenTabIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA77502C39A9270066E8B9 /* OpenTabIntent.swift */; };
 		D3F5CBC82C334582008394A1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5CBC72C334582008394A1 /* Router.swift */; };
 		D3F5CBCC2C33472E008394A1 /* CustomTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5CBCB2C33472E008394A1 /* CustomTabBarItemView.swift */; };
@@ -96,6 +97,7 @@
 		D3CDCDC72C109F5000D7EB76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3CE9D202C3FC15800FA98A0 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D3CE9D222C401B7300FA98A0 /* DatePickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerScreen.swift; sourceTree = "<group>"; };
 		D3EA77502C39A9270066E8B9 /* OpenTabIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTabIntent.swift; sourceTree = "<group>"; };
 		D3F5CBC72C334582008394A1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D3F5CBCB2C33472E008394A1 /* CustomTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemView.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 		D3CDCDB72C109F4F00D7EB76 = {
 			isa = PBXGroup;
 			children = (
+				D3CE9D212C401B3000FA98A0 /* StringInterpolation */,
 				D3CE9D1F2C3FC10F00FA98A0 /* Factory */,
 				D323B8B32C3DED2C008973DE /* Bank */,
 				D3CDCDC22C109F4F00D7EB76 /* WBApp */,
@@ -295,6 +298,14 @@
 				D3CE9D202C3FC15800FA98A0 /* Factory.playground */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		D3CE9D212C401B3000FA98A0 /* StringInterpolation */ = {
+			isa = PBXGroup;
+			children = (
+				D3CE9D222C401B7300FA98A0 /* DatePickerScreen.swift */,
+			);
+			path = StringInterpolation;
 			sourceTree = "<group>";
 		};
 		D3EA774F2C39A8E50066E8B9 /* Intents */ = {
@@ -442,6 +453,7 @@
 				D317ECBE2C286A3C0090B3E0 /* SettingsScreen.swift in Sources */,
 				D3C513D12C11DF2300901FE2 /* VerificationScreen.swift in Sources */,
 				D3FB4E882C35802100163E4C /* String+Extensions.swift in Sources */,
+				D3CE9D232C401B7300FA98A0 /* DatePickerScreen.swift in Sources */,
 				D3FB4E832C35605500163E4C /* ContactsScreen_RowView.swift in Sources */,
 				D3F5CBC82C334582008394A1 /* Router.swift in Sources */,
 				D301280E2C369AE200E3483A /* CustomSearchBarView.swift in Sources */,
