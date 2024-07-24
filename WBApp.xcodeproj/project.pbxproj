@@ -33,6 +33,9 @@
 		D3CDCDC82C109F5000D7EB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CDCDC72C109F5000D7EB76 /* Assets.xcassets */; };
 		D3CDCDCB2C109F5000D7EB76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */; };
 		D3CE9D232C401B7300FA98A0 /* DatePickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE9D222C401B7300FA98A0 /* DatePickerScreen.swift */; };
+		D3CEB3EE2C50FECE00E3DC66 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEB3ED2C50FECE00E3DC66 /* String+.swift */; };
+		D3CEB3F02C50FF8A00E3DC66 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEB3EF2C50FF8A00E3DC66 /* Languages.swift */; };
+		D3CEB3F22C50FFCB00E3DC66 /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEB3F12C50FFCB00E3DC66 /* Days.swift */; };
 		D3EA77512C39A9270066E8B9 /* OpenTabIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA77502C39A9270066E8B9 /* OpenTabIntent.swift */; };
 		D3F5CBC82C334582008394A1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5CBC72C334582008394A1 /* Router.swift */; };
 		D3F5CBCC2C33472E008394A1 /* CustomTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5CBCB2C33472E008394A1 /* CustomTabBarItemView.swift */; };
@@ -98,6 +101,9 @@
 		D3CDCDCA2C109F5000D7EB76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3CE9D202C3FC15800FA98A0 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D3CE9D222C401B7300FA98A0 /* DatePickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerScreen.swift; sourceTree = "<group>"; };
+		D3CEB3ED2C50FECE00E3DC66 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		D3CEB3EF2C50FF8A00E3DC66 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
+		D3CEB3F12C50FFCB00E3DC66 /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		D3EA77502C39A9270066E8B9 /* OpenTabIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTabIntent.swift; sourceTree = "<group>"; };
 		D3F5CBC72C334582008394A1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D3F5CBCB2C33472E008394A1 /* CustomTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemView.swift; sourceTree = "<group>"; };
@@ -304,6 +310,9 @@
 			isa = PBXGroup;
 			children = (
 				D3CE9D222C401B7300FA98A0 /* DatePickerScreen.swift */,
+				D3CEB3ED2C50FECE00E3DC66 /* String+.swift */,
+				D3CEB3EF2C50FF8A00E3DC66 /* Languages.swift */,
+				D3CEB3F12C50FFCB00E3DC66 /* Days.swift */,
 			);
 			path = StringInterpolation;
 			sourceTree = "<group>";
@@ -463,6 +472,7 @@
 				D32AD4CC2C11FB580022A21C /* WalkthroughScreen_LabelView.swift in Sources */,
 				D3CDCDC42C109F4F00D7EB76 /* WBAppApp.swift in Sources */,
 				D3C513D52C11F4B900901FE2 /* WalkthroughScreen_ButtonStackView.swift in Sources */,
+				D3CEB3EE2C50FECE00E3DC66 /* String+.swift in Sources */,
 				D3FB4E8C2C35CE0000163E4C /* ContactsScreen_AvatarView.swift in Sources */,
 				D385B3E92C2E047E0099DDC6 /* Font+Extensions.swift in Sources */,
 				D3EA77512C39A9270066E8B9 /* OpenTabIntent.swift in Sources */,
@@ -470,7 +480,9 @@
 				D317ECB62C28698A0090B3E0 /* CustomTabBarView.swift in Sources */,
 				D317ECBC2C286A1E0090B3E0 /* ChatsScreen.swift in Sources */,
 				D3FB4E902C35EA2900163E4C /* ContactsScreen_DetailView.swift in Sources */,
+				D3CEB3F02C50FF8A00E3DC66 /* Languages.swift in Sources */,
 				D3FB4E862C35610800163E4C /* Contact.swift in Sources */,
+				D3CEB3F22C50FFCB00E3DC66 /* Days.swift in Sources */,
 				D327BD472C3AF76E00455533 /* Shared.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
