@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: - for Common app
 extension String.StringInterpolation {
 	mutating func appendInterpolation(_ value: Int?, units: String) {
 		if let value = value {
